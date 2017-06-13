@@ -1,0 +1,127 @@
+.banner_box{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 330px;
+}
+.banner_box img{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1000px;
+  width: 2000px;
+}
+
+.label{
+  text-align: center;
+  font-size: 32px;
+  font-family: '方正兰亭细黑_GBK';
+  color: #1ab4c3;
+}
+.label_span{
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-family: 'Helvetica';
+  text-transform: uppercase;
+  color: #d9d9d9;
+  margin-top: 5px;
+}
+
+.hospital1, .hospital2{
+  margin-top: 75px;
+}
+.hospital_box{
+  overflow: auto;
+  margin-left: -30px;
+  margin-top: 8px;
+}
+.hospital_box dl{
+  width: 176px;
+  text-align: center;
+  float: left;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.hospital_box dl dt{
+  width: 176px;
+  height: 90px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.hospital_box dl dd a{
+  color: #818181
+}
+.hospital_box dl dd a:hover{
+  text-decoration: underline;
+}
+.hospital_box dl img{
+  max-width: 176px;
+}
+
+.join{
+  text-align: center;
+  background: #f0f3f6;
+  padding-top: 60px;
+  padding-bottom: 96px;
+  margin-top: 80px;
+}
+.join .blue{
+  margin-top: 30px;
+  margin-bottom: 38px;
+}
+.join .blue p{
+  color: #1ab4c3;
+  font-size: 20px;
+  line-height: 36px;
+}
+.join .condition h4{
+  color: #333333;
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+.join .condition p{
+  font-size: 14px;
+  line-height: 26px;
+  color: #818181;
+}
+.join .condition img{
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+}
+
+.communication{
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 110px;
+}
+.communication_box{
+  padding-left: 35px;
+  width: 965px;
+  margin: 0 auto;
+  overflow: auto;
+}
+.communication dl{
+  float: left;
+  text-align: center;
+  margin: 0 74px;
+  width: 160px;
+}
+.communication dl img{
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+.communication dl dd{
+  color: #888;
+  font-size: 14px;
+}
+.communication p{
+  color: #1ab4c3;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 60px;
+}

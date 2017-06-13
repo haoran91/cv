@@ -1,47 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>测试</title>
-    <style>
-      img{
-        border: 1px solid #000;
-      }
-    </style>
-    <script>
-        function addRow(){
-            var oTable = document.getElementById("oTable");
-            var tBodies = oTable.tBodies;
-            var tbody = tBodies[0];
-            var tr = tbody.insertRow(tbody.rows.length);
-            var td_1 = tr.insertCell(0);
-            td_1.innerHTML = "<div contenteditable='true'>第1列</div>";
-            var td_2 = tr.insertCell(1);
-            td_2.innerHTML = "<div contenteditable='true'>第2列</div>";
-        }
-
-    </script>
+    <title>首页-旭和健康</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+    <script src="./js/jquery.1.10.2.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
 </head>
+
 <body>
-<fieldset>
-    <div><a href="https://www.baidu.com" target="_blank">百度一下</a></div>
-    <div><img src="./jj.jpg" alt=""></div>
-    <legend>可编辑的表格</legend>
-    <table id="oTable" style="background-color:#eeeeee;" bordercolor="#aaaaaa" border="1" cellpadding="0" cellpadding="2" width="100%">
-        <thead>
-        <tr>
-            <th>第一列标题</th>
-            <th>第二列标题</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><div contenteditable="true">第一行第一列</div></td>
-            <td><div contenteditable="true">第一行第二列</div></td>
-        </tr>
-        </tbody>
-    </table>
-</fieldset>
-<input type="button" onClick="addRow();" style="font-size:16px;" value="+"/>
+    <div class="rightBox">
+      <img src="./images/rightBox.png" alt="">
+      <button class="btn1">
+          <img class="gzh" src="./images/gzh.png" alt="">
+      </button>
+      <button class="btn2">
+          <img class="gzh" src="./images/gzh.png" alt="">
+      </button>
+      <button class="btn3">
+          <img class="gzh" src="./images/gzh.png" alt="">
+      </button>
+      <button class="btn4">
+          <img class="gzh" src="./images/gzh.png" alt="">
+      </button>
+      <button class="btn5"></button>
+    </div>
+
+    <header>
+        <div class="header">
+            <div class="header_logo">
+                <a href="./index.html"><img src="images/logo.png" alt=""></a>
+            </div>
+            <ul class="header_nav">
+                <li class="on"><a href="#">首页</a></li>
+                <li><a href="./pages/japan.html">日本医疗</a></li>
+                <li><a href="./pages/europe.html">欧洲医疗</a></li>
+                <li><a href="./pages/case.html">医疗案例</a></li>
+                <li><a href="./pages/business.html">商业合作</a></li>
+                <li><a href="./pages/about.html">关于我们</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="banner_big" class="banner_big">
+        <div id="banner_box" class="banner_box">
+            <div id="banner_con" class="banner_con">
+                <a href="#"><img src="images/banner.png"></a>
+                <a href="#" style='background-color:#1ab4c3;'><img src=""></a>
+                <a href="#" style='background-color:#f6e58b;'><img src=""></a>
+            </div>
+            <div id="banner_bar" class="banner_bar">
+                <span index='0' class="on"></span>
+                <span index='1'></span>
+                <span index='2'></span>
+            </div>
+            <a href="javascript:;" id="bar_l" class="bar_l">&lt;</a>
+            <a href="javascript:;" id="bar_r" class="bar_r">&gt;</a>
+        </div>
+    </div>
+
+    <div class="examination">
+        <div class="examination_con w">
+            <img class="examination_img" src="images/img1.png" alt="">
+            <div class="examination_text">
+                <h2 class="label">精密体检<span class="label_span">Precise physical examination</span></h2>
+                <p>采用海外先进医疗技术，精确到全身各部位的精密检查，全面覆盖人体9 大系统多发病症，包括癌症、呼吸循环，神经，消化系统等重大疾病以及高发慢性病，通过海外先进的技术手段和权威医生专业能力，及时排除您所有的担心和身体各个部位的隐患。</p>
+                <a href="">查看详情</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overseas w">
+        <div>
+            <h2 class="label">海外医疗</h2><span class="label_span">Overseas medical</span>
+        </div>
+        <div class="dl_box">
+            <dl>
+                <dt><a href="#"><img style="width:168px;height:168px;" src="images/overseas_01.jpg" alt=""></a></dt>
+                <dd><a href="#">日本高端体检</a></dd>
+                <dd>
+                    <p>日本是世界上癌症防治最先进的国家，可以发现和排查300多种已知癌症…</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a href="#"><img style="width:168px;height:168px;" src="images/overseas_02.jpg" alt=""></a></dt>
+                <dd><a href="#">欧洲基因检测</a></dd>
+                <dd>
+                    <p>北欧国家瑞士不仅是豪华钟表的集散地，更是高端医疗集中地，尖端和…</p>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a href="#"><img style="width:168px;height:168px;" src="images/overseas_03.jpg" alt=""></a></dt>
+                <dd><a href="#">美国癌症治疗</a></dd>
+                <dd>
+                    <p>业务洽谈中，敬请期待…</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="Housekeeper clear">
+        <div>
+            <h2 class="label">管家服务</h2><span class="label_span">Butler service</span>
+        </div>
+        <div class="Housekeeper_imgBox w">
+            <a href="#"><img src="images/Housekeeper.jpg" alt=""></a>
+        </div>
+    </div>
+
+    <div class="vip">
+        <div class="vip_con w">
+            <img class="vip_img" src="images/vip.jpg" alt="">
+            <div class="vip_text">
+                <h2 class="label">会员健康数据库<span class="label_span">Member health database</span></h2>
+                <p>旭和健康医疗团队时刻关爱您的身体健康，平台联合海外权威医疗机构共同打造私属会员健康数据档案，及时记录您身体的每一个变化。健康数据库能够更加直观地对自身身体各项指标进行科学的分析和部署，加入我们，选择健康……</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="w">
+            <div class="fl">
+                <p>
+                    <a href="#">关于我们</a><span></span>
+                    <a href="#">商业合作</a><span></span>
+                    <a href="#">联系我们</a><span></span>
+                    <a href="#">加入我们</a>
+                </p>
+                <p>Copyright &copy; 北京旭和科技. All Rights Reserved. 京ICP备123456789号</p>
+            </div>
+            <div class="fr">
+                <img src="images/telephone.png" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
