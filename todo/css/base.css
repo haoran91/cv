@@ -1,0 +1,206 @@
+*{
+    /*background-color: rgba(0, 0, 0, .1);*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    -moz-transition: background .1s;
+    -webkit-transition: background .1s;
+    -ms-transition: background .1s;
+    -o-transition: background .1s;
+
+    outline: none;
+}
+.fr{
+    float: right;
+}
+body{
+    background-color: #15446A;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+}
+.container > h2{
+    font-size: 28px;
+    margin: 25px 0 16px 0;
+    text-align: center;
+}
+.taskList{
+    margin: 10px 0;
+}
+input,
+.task_item,
+.task_detail_mask,
+.task_detail,
+textarea,
+button{
+    padding: 10px;
+    border-radius: 3px;
+}
+textarea,
+input[type=text],input[type=date]{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #ddd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0 , .4);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0 , .4);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0 , .4);
+}
+input[type=text]:hover,input[type=date]:hover,
+input[type=text]:focus,input[type=date]:focus{
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0 , .2);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0 , .2);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0 , .2);
+}
+
+
+button{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+.addTask input,.addTask button{
+    height: 39px;
+}
+.addTask input[type=text]{
+    float: left;
+    width: 84%;
+    margin-right: 1%;
+    font-weight: bold;
+}
+
+.primary,
+[type=submit]{
+    background-color: #3589CB;
+    color: #fff;
+}
+.addTask button[type=submit]{
+    width: 15%;
+}
+.addTask button:hover{
+    background-color: #85b8ee;
+    color: #000;
+}
+
+.task_item, .addTask input, .addTask button{
+    -webkit-box-shadow: 0 2px 4px rgba(10, 20, 100,.4);
+    -moz-box-shadow: 0 2px 4px rgba(10, 20, 100,.4);
+    box-shadow: 0 2px 4px rgba(10, 20, 100, 4.3);
+}
+
+.task_item{
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background .1s;
+}
+.task_item:hover{
+    background-color: #ddd;
+}
+
+.task_item.completed{
+    color: #ccc;
+    /*background-color: rgba(255,255,255,.9);*/
+    opacity: .7;
+}
+.task_item.completed:after{
+    content: '';
+    display: block;
+    position: relative;
+    top: -10px;
+    height: 1px;
+    width: 97%;
+    background-color: #ccc;
+    float: right;
+}
+.task_detail, .task_detail_mask{
+    position: absolute;
+}
+.task_detail_mask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba( 30, 30, 30, .3);
+    display: none;
+}
+.task_detail{
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    display: none;
+    border-radius: 3px 0 0 3px;
+    -webkit-box-shadow: 0 1px 2px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,.2);
+    overflow: auto;
+}
+.task_detail .content{
+    padding-left: 5px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.task_detail textarea{
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+.task_detail .remind button{
+    margin-top: 12px;
+    background-color: #3589CB;
+    color: #fff;
+    display: none;
+}
+.task_detail .remind button:hover{
+    background-color: #85b8ee;
+    color: #000;
+}
+
+
+.msg{
+    display: none;
+    text-align: center;
+    background-color: #ffe264;
+    padding: 10px;
+    color: #333;
+}
+.msg_content{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.anchor{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.action{
+    color: #888;
+    /*font-size: 90%;*/
+}
+.action:hover{
+    color: #333;
+}
+.task_content{
+    margin-left: 10px;
+}
+.input_item{
+    margin-bottom: 10px;
+}
+
+.alerter{
+    width: 0;
+    height: 0;
+}
