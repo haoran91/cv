@@ -12,7 +12,7 @@
 }
 
 body {
-    background: #00334b;
+    background: #15446A;
     color: #fff;
 }
 
@@ -92,7 +92,7 @@ button {
 
 button.primary,
 [type=submit] {
-    background: #46b1e4;
+    background: #3589CB;
 }
 
 .add-task [type=submit] {
@@ -107,7 +107,7 @@ button.primary,
 }
 
 .add-task [type=submit]:hover {
-    background: #5fb9e4;
+    background: #85b8ee;
 }
 
 .task-item {
